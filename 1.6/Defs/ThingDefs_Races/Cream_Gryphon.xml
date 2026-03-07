@@ -166,6 +166,7 @@
 
                 <weaponList>
                     <li>Gryph_Crossbow</li>
+                    <li>Gryph_Cannon</li>
                 </weaponList>
 
                 <apparelList>
@@ -394,7 +395,7 @@
                             <kindDefs>
                                 <li>CreamGryphon_Colonist</li>
                             </kindDefs>
-                            <chance>30.0</chance>
+                            <chance>25.0</chance>
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
@@ -410,7 +411,7 @@
                         <kindDefs>
                             <li>CreamGryph_Villager</li>
                         </kindDefs>
-                        <chance>90.0</chance>
+                        <chance>70.0</chance>
                     </li>
                     </pawnKindEntries>
                     <factionDefs>
