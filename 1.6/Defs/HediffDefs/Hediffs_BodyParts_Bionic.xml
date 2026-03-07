@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+  <!--Bases-->
+  <ThingDef Name="GryphBionicBase" ParentName="BodyPartBionicBase" Abstract="True">
+    <techHediffsTags>
+      <li>GryphAdvanced</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <recipeMaker>
+      <researchPrerequisite>GryphonBionics</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+
   <!--Heart-->
   <HediffDef ParentName="AddedBodyPartBase">
       <defName>BionicGryphHeart</defName>
@@ -25,14 +37,11 @@
       </addedPartProps>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphHeart</defName>
     <label>bionic gryphon heart</label>
     <description>An advanced artificial gryphon heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It also provides better healing capacities.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphHeart</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MaxHitPoints>150</MaxHitPoints>
@@ -106,14 +115,11 @@
       </stages>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphLung</defName>
     <label>bionic gryphon lung</label>
     <description>An advanced artificial gryphon lung. Optimized to regulate breaths in such a way to last longer.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphLung</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>1600</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>
@@ -187,14 +193,11 @@
     </stages>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphKidney</defName>
     <label>bionic gryphon kidney</label>
     <description>An advanced artificial gryphon kidney. It's capability to filter waste and extra water from the host's blood is so efficient that there's hardly any waste at all.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphKidney</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>1600</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>
@@ -269,14 +272,11 @@
       </addedPartProps>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphEye</defName>
     <label>bionic gryphon eye</label>
     <description>An advanced artificial gryphon eye. Allow for gryphons to have better vison</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphEye</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>1000</MarketValue>
       <MaxHitPoints>150</MaxHitPoints>
@@ -351,14 +351,11 @@
     </stages>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphSpine</defName>
     <label>bionic gryphon spine</label>
     <description>An advanced artificial gryphon spine. A biogel nerve bundle runs down an articulated plasteel core, surrounded by a lattice-dust healing system. It seem to pontain just a little power.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphSpine</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>1200</MarketValue>
       <MaxHitPoints>100</MaxHitPoints>
@@ -434,14 +431,11 @@
     </addedPartProps>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphWing</defName>
     <label>bionic gryphon wing</label>
     <description>An advanced artificial gryphon wing. This wing is designed to allow feathers to be inserted into slots making it appear as if its a normal wing.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphWing</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>1300</MarketValue>
       <MaxHitPoints>150</MaxHitPoints>
@@ -516,14 +510,11 @@
     </addedPartProps>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphTalon</defName>
     <label>bionic gryphon talon</label>
     <description>An advanced artificial gryphon talon. This talon is designed with a plasteel core, mechnisms on the inside allow the gryohon use it as normal. The outide is then textured and colored to resemble a bird like talon.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphWing</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>1000</MarketValue>
       <MaxHitPoints>150</MaxHitPoints>
@@ -597,14 +588,11 @@
     </addedPartProps>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
+  <ThingDef ParentName="GryphBionicBase">
     <defName>BionicGryphLeg</defName>
     <label>bionic gryphon leg</label>
     <description>An advanced artificial gryphon leg. This leg is designed with a plasteel core, mechnisms on the inside allow the gryohon use it as normal.</description>
     <descriptionHyperlinks><RecipeDef>InstallBionicGryphWing</RecipeDef></descriptionHyperlinks>
-    <recipeMaker>
-      <researchPrerequisite>GryphonBionics</researchPrerequisite>
-    </recipeMaker>
     <statBases>
       <MarketValue>800</MarketValue>
       <MaxHitPoints>150</MaxHitPoints>

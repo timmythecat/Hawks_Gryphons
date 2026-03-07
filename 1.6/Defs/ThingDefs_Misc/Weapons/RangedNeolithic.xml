@@ -27,8 +27,7 @@
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>NeolithicRangedHeavy</li>
-      <li>NeolithicRangedChief</li>
+      <li>GryphonNeolithic</li>
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>
@@ -83,7 +82,7 @@
     </projectile>
   </ThingDef>
 
-    <ThingDef ParentName="BaseWeaponNeolithic" Name="Cannon_Gryph">
+  <ThingDef ParentName="BaseWeaponNeolithic" Name="Cannon_Gryph">
     <defName>Gryph_Cannon</defName>
     <label>gryphon cannon</label>
     <description>A big and powerful cannon. Fires a large cannonball long distances.</description>
@@ -109,8 +108,7 @@
       <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>NeolithicRangedHeavy</li>
-      <li>NeolithicRangedChief</li>
+      <li>GryphonNeolithic</li>
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>
