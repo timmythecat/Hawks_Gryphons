@@ -30,5 +30,12 @@
         <li>erdelf.HumanoidAlienRaces</li>
     </loadAfter>
 
-	<description>Adds Solstice to the game. YES ik the portraits are broken and I do not have a fix for it.</description>
+	<description>
+A mod that adds gryphons that work like humans. They are able to do jobs like crafting, cleaning, medical and more as well as able to be drafted. 
+There are 3 grypnons in this base mod as well as pleny of gryphon related equipment.
+
+Credits:
+Anthitei - Textures for gryphons and pillow
+ottersholdhands - several snips of code to help some custom features
+	</description>
 </ModMetaData>
