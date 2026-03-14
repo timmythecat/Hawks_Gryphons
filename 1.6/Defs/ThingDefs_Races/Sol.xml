@@ -389,7 +389,7 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>Sol_SpaceRefugee</li>
+                        <li>Saberbeak_SpaceRefugee</li>
                     </kindDefs>
                     <chance>20.0</chance>
                 </li>

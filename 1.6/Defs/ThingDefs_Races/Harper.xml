@@ -404,7 +404,7 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>Harper_SpaceRefugee</li>
+                        <li>Raven_SpaceRefugee</li>
                     </kindDefs>
                     <chance>30.0</chance>
                 </li>

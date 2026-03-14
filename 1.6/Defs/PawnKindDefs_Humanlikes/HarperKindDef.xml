@@ -11,7 +11,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="SpaceRefugeeBase">
-        <defName>Harper_SpaceRefugee</defName>
+        <defName>Raven_SpaceRefugee</defName>
         <label>space refugee</label>
         <race>charred_raven_gryphon</race>
         <combatPower>120</combatPower>

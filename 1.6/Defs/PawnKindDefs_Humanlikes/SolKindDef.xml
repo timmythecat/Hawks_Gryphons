@@ -11,7 +11,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="SpaceRefugeeBase">
-        <defName>Sol_SpaceRefugee</defName>
+        <defName>Saberbeak_SpaceRefugee</defName>
         <label>space refugee</label>
         <race>saberbeak_gryphon</race>
         <combatPower>140</combatPower>
