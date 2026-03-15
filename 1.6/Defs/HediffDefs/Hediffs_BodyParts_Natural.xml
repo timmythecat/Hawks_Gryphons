@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+    <RecipeDef Name="GryphInstallBodyPartNaturalBase" ParentName="SurgeryInstallBodyPartNaturalBase" Abstract="True">
+        <recipeUsers Inherit="false">
+            <li MayRequire="hawkimport.harper">charred_raven_gryphon</li>
+            <li MayRequire="hawkimport.harper">saberbeak_gryphon</li>
+            <li>cream_gryphon</li>
+        </recipeUsers>
+    </RecipeDef>
+
     <!--Heart-->
     <ThingDef ParentName="BodyPartNaturalBase">
         <defName>Hawkimport_Heart</defName>
@@ -13,7 +21,7 @@
         </statBases>
     </ThingDef>
   
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="GryphInstallBodyPartNaturalBase">
         <defName>Hawkimport_InstallGryphHeart</defName>
         <label>install gryphon heart</label>
         <description>Install a gryphon heart.</description>
@@ -22,11 +30,6 @@
         <skillRequirements>
         <Medicine>10</Medicine>
         </skillRequirements>
-        <recipeUsers Inherit="false">
-            <li>charred_raven_gryphon</li>
-            <li>saberbeak_gryphon</li>
-            <li>cream_gryphon</li>
-        </recipeUsers>
         <ingredients>
         <li>
             <filter>
@@ -59,16 +62,11 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="GryphInstallBodyPartNaturalBase">
         <defName>Hawkimport_InstallNaturalLung</defName>
         <label>install gryphon lung</label>
         <description>Install a gryphon lung.</description>
         <jobString>Installing gryphon lung.</jobString>
-        <recipeUsers Inherit="false">
-            <li>charred_raven_gryphon</li>
-            <li>saberbeak_gryphon</li>
-            <li>cream_gryphon</li>
-        </recipeUsers>
         <ingredients>
             <li>
                 <filter>
@@ -99,18 +97,13 @@
         <MarketValue>1100</MarketValue>
         <Mass>2</Mass>
         </statBases>
-  </ThingDef>
+    </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="GryphInstallBodyPartNaturalBase">
         <defName>Hawkimport_InstallNaturalKidney</defName>
         <label>install gryphon kidney</label>
         <description>Install a gryphon kidney.</description>
         <jobString>Installing gryphon kidney.</jobString>
-        <recipeUsers Inherit="false">
-            <li>charred_raven_gryphon</li>
-            <li>saberbeak_gryphon</li>
-            <li>cream_gryphon</li>
-        </recipeUsers>
         <ingredients>
             <li>
                 <filter>

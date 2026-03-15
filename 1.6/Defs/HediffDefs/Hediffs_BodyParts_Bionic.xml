@@ -12,6 +12,13 @@
     </recipeMaker>
   </ThingDef>
 
+  <RecipeDef Name="GryphInstallBodyPartBionicBase" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+    <recipeUsers Inherit="false">
+      <li MayRequire="hawkimport.harper">charred_raven_gryphon</li>
+      <li MayRequire="hawkimport.harper">saberbeak_gryphon</li>
+      <li>cream_gryphon</li>
+    </recipeUsers>
+  </RecipeDef>
 
   <!--Heart-->
   <HediffDef ParentName="AddedBodyPartBase">
@@ -55,7 +62,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphHeart</defName>
     <label>install bionic gryphon heart</label>
     <description>Install a bionic gryphon heart.</description>
@@ -67,11 +74,6 @@
         <Medicine>12</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon heart.</jobString>
-    <recipeUsers>
-        <li>charred_raven_gryphon</li>
-        <li>saberbeak_gryphon</li>
-        <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -133,7 +135,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphLung</defName>
     <label>install bionic gryphon lung</label>
     <description>Install a bionic gryphon lung.</description>
@@ -145,11 +147,6 @@
         <Medicine>8</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon lung.</jobString>
-    <recipeUsers>
-        <li>charred_raven_gryphon</li>
-        <li>saberbeak_gryphon</li>
-        <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -211,7 +208,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphKidney</defName>
     <label>install bionic gryphon kidney</label>
     <description>Install a bionic gryphon kidney.</description>
@@ -223,11 +220,6 @@
         <Medicine>8</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon kidney.</jobString>
-    <recipeUsers>
-        <li>charred_raven_gryphon</li>
-        <li>saberbeak_gryphon</li>
-        <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -290,7 +282,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphEye</defName>
     <label>install bionic gryphon eye</label>
     <description>Install a bionic gryphon eye.</description>
@@ -302,11 +294,6 @@
         <Medicine>8</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon eye.</jobString>
-    <recipeUsers>
-        <li>charred_raven_gryphon</li>
-        <li>saberbeak_gryphon</li>
-        <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -369,7 +356,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphSpine</defName>
     <label>install bionic gryphon spine</label>
     <description>Install a bionic gryphon spine.</description>
@@ -381,11 +368,6 @@
         <Medicine>8</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon spine.</jobString>
-    <recipeUsers>
-        <li>charred_raven_gryphon</li>
-        <li>saberbeak_gryphon</li>
-        <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -449,7 +431,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphWing</defName>
     <label>install bionic gryphon wing</label>
     <description>Install a bionic gryphon wing.</description>
@@ -461,11 +443,6 @@
         <Medicine>8</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon Wing.</jobString>
-    <recipeUsers>
-      <li>charred_raven_gryphon</li>
-      <li>saberbeak_gryphon</li>
-      <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -528,7 +505,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphTalon</defName>
     <label>install bionic gryphon talon</label>
     <description>Install a bionic gryphon talon.</description>
@@ -540,11 +517,6 @@
         <Medicine>7</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon talon.</jobString>
-    <recipeUsers>
-      <li>charred_raven_gryphon</li>
-      <li>saberbeak_gryphon</li>
-      <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -606,7 +578,7 @@
     </costList>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
     <defName>InstallBionicGryphLeg</defName>
     <label>install bionic gryphon leg</label>
     <description>Install a bionic gryphon leg.</description>
@@ -618,11 +590,6 @@
         <Medicine>7</Medicine>
     </skillRequirements>
     <jobString>Installing bionic gryphon leg.</jobString>
-    <recipeUsers>
-      <li>charred_raven_gryphon</li>
-      <li>saberbeak_gryphon</li>
-      <li>cream_gryphon</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>
