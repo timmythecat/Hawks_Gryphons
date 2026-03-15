@@ -4,7 +4,7 @@
     <ThingDef ParentName="BuildingBase">
     <defName>CharredRaven_OxygenPump</defName>
     <label>charred raven oxygen pump</label>
-    <description>An oxygen pump that uses charred raven feathers to produse a little heat as the oxygen flows through it.</description>
+    <description>An oxygen pump that uses feathers to produse a little heat as the oxygen flows through it.</description>
     <thingClass>HarperAndFriends.Things.Building_HarperOxygenPump</thingClass>
     <tickerType>Rare</tickerType>
     <rotatable>true</rotatable>
@@ -50,7 +50,7 @@
     <costList>
       <Steel>100</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
-      <Feather_Harper>10</Feather_Harper>
+      <Gryphon_Feather>10</Gryphon_Feather>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
