@@ -1,8 +1,8 @@
-# Harper-and-Friends
-A mod to add gryphons such as Harper and Wynter to rimworld as human like pawns.
+# Hawk's Gryphons
+A mod that adds gryphons that work like humans. They are able to do jobs like crafting, cleaning, medical and more as well as able to be drafted.
 
 ## Features
-+ Currently 3 races: Harper like, Wynter like and a cream colored gryphon
++ Currently adds cream colored gryphons
 + A research tree for all things gryphon
 + A new leather category that has Gryphon feathers
 + A set of Genes for the Gryphons

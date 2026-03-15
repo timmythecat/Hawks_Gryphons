@@ -216,7 +216,7 @@
 			<leatherDef>Feather_Harper</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>QuadrupedAnimalWithWingsAndBeak</body>
-			<baseBodySize>5</baseBodySize> <!--Normaly 5-->
+			<baseBodySize>6</baseBodySize> <!--Normaly 5-->
 			<baseHealthScale>6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OmnivoreHuman</foodType>
             <baseHungerRate>0.6</baseHungerRate>
@@ -397,7 +397,7 @@
         </tools>
     </AlienRace.ThingDef_AlienRace>
 
-    <AlienRace.RaceSettings>
+    <!--<AlienRace.RaceSettings>
         <defName>Charred_Raven_RaceSettings</defName>
 
         <pawnKindSettings>
@@ -410,5 +410,5 @@
                 </li>
             </alienrefugeekinds>
         </pawnKindSettings>
-    </AlienRace.RaceSettings>
+    </AlienRace.RaceSettings>-->
 </Defs>

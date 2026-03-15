@@ -201,7 +201,7 @@
 			<leatherDef>Feather_Sol</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>QuadrupedAnimalWithWingsAndBeak</body>
-			<baseBodySize>7</baseBodySize>
+			<baseBodySize>9</baseBodySize>
             <baseHungerRate>0.7</baseHungerRate>
 			<baseHealthScale>8</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
@@ -382,7 +382,7 @@
         </tools>
     </AlienRace.ThingDef_AlienRace>
 
-    <AlienRace.RaceSettings>
+    <!--<AlienRace.RaceSettings>
         <defName>Saberbeak_RaceSettings</defName>
 
         <pawnKindSettings>
@@ -395,5 +395,5 @@
                 </li>
             </alienrefugeekinds>
         </pawnKindSettings>
-    </AlienRace.RaceSettings>
+    </AlienRace.RaceSettings>-->
 </Defs>

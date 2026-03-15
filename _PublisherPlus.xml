@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>.git</exclude>
+    <exclude>Sourse</exclude>
+    <exclude>Textures\Buildings\LargeNest\Nest.clip</exclude>
+    <exclude>Textures\Buildings\RoyalAnimalBed.rar</exclude>
+    <exclude>Textures\CommonGryphon\Cream_eggs\HarperEgg_a.clip</exclude>
+    <exclude>Textures\Gryphon\GryphonB_east.clip</exclude>
+    <exclude>Textures\Gryphon\GryphonB_north.clip</exclude>
+    <exclude>Textures\Gryphon\GryphonB_south.clip</exclude>
+    <exclude>Textures\Other\Effects\FireGlow.png</exclude>
+    <exclude>Textures\Other\Effects\FireSpew_A.psd</exclude>
+  </Excluded>
+</Configuration>
