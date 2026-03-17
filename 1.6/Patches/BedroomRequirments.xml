@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
-    <value>
-        <li>Hawk_Nest</li>
-        <li>Hawk_Gryph_Pillow</li>
-    </value>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
+      <value>
+          <li>Hawk_Nest</li>
+          <li>Hawk_Gryph_Pillow</li>
+      </value>
+    </match>
   </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
-    <value>
-        <li>Hawk_Nest</li>
-        <li>Hawk_Gryph_Pillow</li>
-    </value>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
+      <value>
+          <li>Hawk_Nest</li>
+          <li>Hawk_Gryph_Pillow</li>
+      </value>
+    </match>
   </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
-    <value>
-        <li>Hawk_Nest</li>
-        <li>Hawk_Gryph_Pillow</li>
-    </value>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
+      <value>
+          <li>Hawk_Nest</li>
+          <li>Hawk_Gryph_Pillow</li>
+      </value>
+    </match>
   </Operation>
-    <Operation Class="PatchOperationAdd">
+
+  <Operation Class="PatchOperationAdd">
     <xpath>/Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
     <value>
         <li>Hawk_Gryph_Pillow</li>
     </value>
   </Operation>
-    <Operation Class="PatchOperationAdd">
+
+  <Operation Class="PatchOperationAdd">
     <xpath>/Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
     <value>
         <li>Hawk_Gryph_Pillow</li>

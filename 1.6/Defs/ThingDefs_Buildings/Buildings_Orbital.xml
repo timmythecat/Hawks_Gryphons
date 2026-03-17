@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Odyssey">
     <defName>CharredRaven_OxygenPump</defName>
     <label>charred raven oxygen pump</label>
     <description>An oxygen pump that uses feathers to produse a little heat as the oxygen flows through it.</description>
@@ -14,7 +14,7 @@
     </thingCategories>
     <uiIconPath>Things/Building/LifesupportUnit/LifesupportUnit_MenuIcon</uiIconPath>
     <graphicData>
-      <texPath>Things/Building/LifesupportUnit/LifesupportUnit</texPath>
+      <texPath>Things/Building/LifesupportUnit/LifesupportUnit</texPath> <!--Needs to be changed-->
       <graphicClass>Graphic_Multi</graphicClass>
       <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
       <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>

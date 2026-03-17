@@ -79,12 +79,12 @@
                     </li>
                 </disallowedTraits>
 
-                <raceGenes>
-                    <li>
+                <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
                         <defName>Gryphon_Skin</defName>
                         <chance>70</chance>
                     </li>
-                    <li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
                         <defName>Gryphon_Skin_Dark</defName>
                         <chance>70</chance>
                     </li>
@@ -170,7 +170,7 @@
                 </weaponList>
 
                 <apparelList>
-                    <li>gryph_SpaceCollar</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">gryph_SpaceCollar</li>
                 </apparelList>
 
                 <whiteApparelList>
@@ -185,8 +185,8 @@
                 </blackEndoCategories>
 
                 <geneList>
-                    <li>Gryphon_Skin</li>
-                    <li>Gryphon_Skin_Dark</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Gryphon_Skin</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Gryphon_Skin_Dark</li>
                 </geneList>
             </raceRestriction>
 

@@ -5,7 +5,7 @@
     <displayOrder>999</displayOrder>
   </AbilityCategoryDef>
 
-  <AbilityDef>
+  <AbilityDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Hawk_FireSpew</defName>
     <label>gryphon fire spew</label>
     <description>Spit a stream of flammable bile from the beak. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck.</description>
