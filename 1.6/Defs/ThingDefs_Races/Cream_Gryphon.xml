@@ -209,7 +209,7 @@
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
 			<foodType>CarnivoreAnimal, OmnivoreHuman</foodType>
-            <baseHungerRate>0.50</baseHungerRate>
+            <baseHungerRate>0.60</baseHungerRate>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<meatMarketValue>0.5</meatMarketValue>
 			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
@@ -320,9 +320,9 @@
             <LeatherAmount>20</LeatherAmount>
 			<RoyalFavorValue>2</RoyalFavorValue>
             <Flammability>0.4</Flammability>
-            <ImmunityGainSpeed>1.4</ImmunityGainSpeed>
+            <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
             <FoodPoisonChance>0.8</FoodPoisonChance>
-            <MentalBreakThreshold>0.3</MentalBreakThreshold>
+            <MentalBreakThreshold>0.35</MentalBreakThreshold>
             <CarryingCapacity>100</CarryingCapacity>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
         </statBases>
