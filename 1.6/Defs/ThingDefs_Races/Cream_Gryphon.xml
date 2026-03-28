@@ -8,14 +8,14 @@
         <alienRace>
             <graphicPaths>
                 <body>
-                    <path>CommonGryphon/Body/Gryphon1</path>
+                    <path>CreamGryphon/Body/Gryphon1</path>
                     <extendedGraphics>
-                        <Age For="Egg">CommonGryphon/Cream_eggs/CreamEgg</Age>
-                        <Age For="Gryphlet">CommonGryphon/Body/Naked_Child</Age>
+                        <Age For="Egg">CreamGryphon/Cream_eggs/CreamEgg</Age>
+                        <Age For="Gryphlet">CreamGryphon/Body/Naked_Child</Age>
                     </extendedGraphics>
                 </body>
                 <head>
-                    <path>CommonGryphon/Heads/</path>
+                    <path>CreamGryphon/Heads/</path>
                 </head>
                 <skeleton>
                     <path>Sol/Dessicated/Dessicated_Solstice_east</path>
@@ -434,7 +434,7 @@
                     <kindDefs>
                         <li>CreamGryph_Slave</li>
                     </kindDefs>
-                    <chance>40.0</chance>
+                    <chance>50.0</chance>
                 </li>
             </alienslavekinds>
         </pawnKindSettings>
