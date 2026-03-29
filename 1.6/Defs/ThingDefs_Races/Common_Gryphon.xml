@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>cream_gryphon</defName>
-        <label>Cream Gryphon</label>
-        <description>A common cream colored gryphon (as a pawn)</description>
+        <defName>Hawk_common_gryphon</defName>
+        <label>Gryphon</label>
+        <description>A common gryphon that can vary a little in looks (acts as a pawn)</description>
 
         <alienRace>
             <graphicPaths>
                 <body>
-                    <path>CreamGryphon/Body/Gryphon1</path>
+                    <path>CommonGryphon/Body/Gryphon1</path>
                     <extendedGraphics>
                         <Age For="Egg">CreamGryphon/Cream_eggs/CreamEgg</Age>
-                        <Age For="Gryphlet">CreamGryphon/Body/Naked_Child</Age>
+                        <Age For="Gryphlet">CommonGryphon/Naked_Child</Age>
                     </extendedGraphics>
                 </body>
                 <head>
-                    <path>CreamGryphon/Heads/</path>
+                    <path>CommonGryphon/Heads/</path>
                 </head>
+                <headMasks>CommonGryphon/HeadMasks/Mask</headMasks>
                 <skeleton>
                     <path>Sol/Dessicated/Dessicated_Solstice_east</path>
                 </skeleton>
@@ -129,26 +130,28 @@
                         <li>Female_AverageNormal</li>
                     </headTypes>
 
-                    <customDrawSize>(3.6, 3.6)</customDrawSize>
-                    <customPortraitDrawSize>(3.4, 3.4)</customPortraitDrawSize>
-                    <customPortraitHeadDrawSize>(0.9, 0.9)</customPortraitHeadDrawSize>
-                    <customHeadDrawSize>(0.99, 0.99)</customHeadDrawSize>
+                    <customDrawSize>(1.8, 1.8)</customDrawSize>
+                    <customPortraitDrawSize>(1.6, 1.6)</customPortraitDrawSize>
+                    <customPortraitHeadDrawSize>(1.5, 1.5)</customPortraitHeadDrawSize>
+                    <customHeadDrawSize>(1.9, 1.9)</customHeadDrawSize>
                     <borderScale>4.0</borderScale>
                     <atlasScale>3</atlasScale>
 
-                    <colorChannels>
+                    <colorChannels Inherit="false">
                         <li>
                             <name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
-									<li>
-										<weight>100</weight>
-										<only>RGBA(210, 255, 255, 255)</only>
-									</li>
+                                    <li><weight>100</weight><only>RGBA(255,255,255,255)</only></li>
 								</options>
 							</first>
-                            <second Class="AlienRace.ColorGenerator_CustomAlienChannel">
-                                <colorChannel>skin_1</colorChannel>
+                            <second Class="ColorGenerator_Options">
+                                <options>
+                                    <li><weight>25</weight><only>RGBA(200,200,200,255)</only></li>
+                                    <li><weight>25</weight><only>RGBA(120,120,120,255)</only></li>
+                                    <li><weight>25</weight><only>RGBA(250,160,100,255)</only></li>
+                                    <li><weight>25</weight><only>RGBA(250,240,100,255)</only></li>
+                                </options>
                             </second>
                         </li>
                     </colorChannels>
@@ -219,7 +222,6 @@
 			<meatMarketValue>0.5</meatMarketValue>
 			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
-            <useMeatFrom>Hawk_common_gryphon</useMeatFrom>
 
             <renderTree>Humanlike</renderTree>
             <bloodDef>Filth_Blood</bloodDef>
@@ -239,14 +241,14 @@
                 <li Class="AlienRace.LifeStageAgeAlien">
                     <def>Gryphlet</def>
                     <minAge>1</minAge>
-                    <customDrawSize>(2.0, 2.0)</customDrawSize>
-                    <customHeadDrawSize>(0.57, 0.57)</customHeadDrawSize>
+                    <customDrawSize>(1.0, 1.0)</customDrawSize>
+                    <customHeadDrawSize>(1.39, 1.39)</customHeadDrawSize>
                 </li>
                 <li Class="AlienRace.LifeStageAgeAlien">
                     <def>HumanlikeTeenager</def>
                     <minAge>7</minAge>
-                    <customDrawSize>(3.0, 3.0)</customDrawSize>
-                    <customHeadDrawSize>(0.85, 0.85)</customHeadDrawSize>
+                    <customDrawSize>(1.5, 1.5)</customDrawSize>
+                    <customHeadDrawSize>(1.6, 1.6)</customHeadDrawSize>
                 </li>
                 <li>
                     <def>HumanlikeAdult</def>
@@ -390,7 +392,7 @@
         </tools>
     </AlienRace.ThingDef_AlienRace>
 
-    <AlienRace.RaceSettings>
+    <!--<AlienRace.RaceSettings>
         <defName>CreamGryph_RaceSettings</defName>
         
         <pawnKindSettings>
@@ -444,5 +446,5 @@
                 </li>
             </alienslavekinds>
         </pawnKindSettings>
-    </AlienRace.RaceSettings>
+    </AlienRace.RaceSettings>-->
 </Defs>
