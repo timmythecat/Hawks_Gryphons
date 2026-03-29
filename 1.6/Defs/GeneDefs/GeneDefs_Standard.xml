@@ -1,23 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef ParentName="GeneSkinColorOverride" MayRequire="Ludeon.RimWorld.Biotech">
+    <GeneDef Name="GeneGryphonSkinColor" ParentName="GeneSkinColorOverride" MayRequire="Ludeon.RimWorld.Biotech" Abstract="True">
         <displayCategory>Gryhpon</displayCategory>
+        <randomBrightnessFactor>0.1</randomBrightnessFactor>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneGryphonSkinColor" MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Gryphon_Skin</defName>
         <label>gryphon skin</label>
         <description>Just a copy of Sheer white skin, but made a replacement just for gryphons to display properly</description>
         <skinColorOverride>(250, 240, 240)</skinColorOverride>
-        <randomBrightnessFactor>0.1</randomBrightnessFactor>
         <displayOrderInCategory>1</displayOrderInCategory>
     </GeneDef>
 
-    <GeneDef ParentName="GeneSkinColorOverride" MayRequire="Ludeon.RimWorld.Biotech">
-        <displayCategory>Gryhpon</displayCategory>
+    <GeneDef ParentName="GeneGryphonSkinColor" MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Gryphon_Skin_Dark</defName>
         <label>gryphon skin dark</label>
         <description>Just a copy of Sheer Grey skin, but made a replacement just for gryphons to display properly</description>
         <skinColorOverride>(140, 135, 135)</skinColorOverride>
-        <randomBrightnessFactor>0.1</randomBrightnessFactor>
         <displayOrderInCategory>2</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneGryphonSkinColor" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Gryphon_Skin_brown</defName>
+        <label>gryphon skin brown</label>
+        <description>A gene for making gryphon fur brown</description>
+        <skinColorOverride>(176, 156, 145)</skinColorOverride>
+        <displayOrderInCategory>3</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneGryphonSkinColor" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Gryphon_Skin_darkbrown</defName>
+        <label>gryphon skin dark brown</label>
+        <description>A gene for making gryphon fur brown</description>
+        <skinColorOverride>(122, 102, 89)</skinColorOverride>
+        <displayOrderInCategory>4</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneGryphonSkinColor" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Gryphon_Skin_green</defName>
+        <label>gryphon skin dark brown</label>
+        <description>A gene for making gryphon fur green</description>
+        <skinColorOverride>(174, 210, 173)</skinColorOverride>
+        <displayOrderInCategory>4</displayOrderInCategory>
     </GeneDef>
 
     <GeneDef MayRequire="Ludeon.RimWorld.Biotech">

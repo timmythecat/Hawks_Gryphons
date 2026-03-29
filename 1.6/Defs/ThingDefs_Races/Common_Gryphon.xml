@@ -82,12 +82,14 @@
 
                 <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
                     <li MayRequire="Ludeon.RimWorld.Biotech">
-                        <defName>Gryphon_Skin</defName>
-                        <chance>70</chance>
-                    </li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">
-                        <defName>Gryphon_Skin_Dark</defName>
-                        <chance>70</chance>
+                        <options>
+                            <li>Gryphon_Skin</li>
+                            <li>Gryphon_Skin_Dark</li>
+                            <li>Gryphon_Skin_brown</li>
+                            <li>Gryphon_Skin_darkbrown</li>
+                            <li>Gryphon_Skin_green</li>
+                        </options>
+                        <chance>100</chance>
                     </li>
                 </raceGenes>
 
@@ -392,8 +394,8 @@
         </tools>
     </AlienRace.ThingDef_AlienRace>
 
-    <!--<AlienRace.RaceSettings>
-        <defName>CreamGryph_RaceSettings</defName>
+    <AlienRace.RaceSettings>
+        <defName>Hawk_Gryph_RaceSettings</defName>
         
         <pawnKindSettings>
             <startingColonists>
@@ -401,7 +403,7 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>CreamGryphon_Colonist</li>
+                                <li>Hawk_Gryphon_Colonist</li>
                             </kindDefs>
                             <chance>25.0</chance>
                         </li>
@@ -412,7 +414,7 @@
                 </li>
             </startingColonists>
 
-            <alienwandererkinds>
+            <!--<alienwandererkinds>
                 <li>
                     <pawnKindEntries>
                     <li>
@@ -426,25 +428,25 @@
                         <li>PlayerColony</li> 
                     </factionDefs>
                 </li>
-            </alienwandererkinds>
+            </alienwandererkinds>-->
 
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>CreamGryphon_SpaceRefugee</li>
+                        <li>Hawk_Gryphon_SpaceRefugee</li>
                     </kindDefs>
                     <chance>60.0</chance>
                 </li>
             </alienrefugeekinds>
 
-            <alienslavekinds>
+            <!--<alienslavekinds>
                 <li>
                     <kindDefs>
                         <li>CreamGryph_Slave</li>
                     </kindDefs>
                     <chance>50.0</chance>
                 </li>
-            </alienslavekinds>
+            </alienslavekinds>-->
         </pawnKindSettings>
-    </AlienRace.RaceSettings>-->
+    </AlienRace.RaceSettings>
 </Defs>
