@@ -392,55 +392,14 @@
 
     <AlienRace.RaceSettings>
         <defName>CreamGryph_RaceSettings</defName>
-        
+
         <pawnKindSettings>
-            <startingColonists>
-                <li>
-                    <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-                                <li>CreamGryphon_Colonist</li>
-                            </kindDefs>
-                            <chance>25.0</chance>
-                        </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>PlayerColony</li> 
-                    </factionDefs>
-                </li>
-            </startingColonists>
-
-            <alienwandererkinds>
-                <li>
-                    <pawnKindEntries>
-                    <li>
-                        <kindDefs>
-                            <li>CreamGryph_Villager</li>
-                        </kindDefs>
-                        <chance>70.0</chance>
-                    </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>PlayerColony</li> 
-                    </factionDefs>
-                </li>
-            </alienwandererkinds>
-
-            <alienrefugeekinds>
-                <li>
-                    <kindDefs>
-                        <li>CreamGryphon_SpaceRefugee</li>
-                    </kindDefs>
-                    <chance>60.0</chance>
-                </li>
-            </alienrefugeekinds>
-
             <alienslavekinds>
                 <li>
                     <kindDefs>
                         <li>CreamGryph_Slave</li>
                     </kindDefs>
-                    <chance>50.0</chance>
+                    <chance>40.0</chance>
                 </li>
             </alienslavekinds>
         </pawnKindSettings>

@@ -414,12 +414,12 @@
                 </li>
             </startingColonists>
 
-            <!--<alienwandererkinds>
+            <alienwandererkinds>
                 <li>
                     <pawnKindEntries>
                     <li>
                         <kindDefs>
-                            <li>CreamGryph_Villager</li>
+                            <li>Hawk_Gryphon_Villager</li>
                         </kindDefs>
                         <chance>70.0</chance>
                     </li>
@@ -428,7 +428,7 @@
                         <li>PlayerColony</li> 
                     </factionDefs>
                 </li>
-            </alienwandererkinds>-->
+            </alienwandererkinds>
 
             <alienrefugeekinds>
                 <li>
@@ -439,14 +439,14 @@
                 </li>
             </alienrefugeekinds>
 
-            <!--<alienslavekinds>
+            <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>CreamGryph_Slave</li>
+                        <li>Hawk_Gryphon_Slave</li>
                     </kindDefs>
-                    <chance>50.0</chance>
+                    <chance>40.0</chance>
                 </li>
-            </alienslavekinds>-->
+            </alienslavekinds>
         </pawnKindSettings>
     </AlienRace.RaceSettings>
 </Defs>
