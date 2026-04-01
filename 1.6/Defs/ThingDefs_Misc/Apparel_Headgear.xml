@@ -68,4 +68,75 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
-</Defs>
+
+  <ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>gryph_SpaceTailRing</defName>
+    <label>grypyon space tail ring</label>
+    <description>This ring creates a feild around a gryphons's tail when worn, protecting them from a vacuum</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData>
+      <texPath>Things/Tail_Ring_item</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.2</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+      <VacuumResistance>0.30</VacuumResistance>
+    </equippedStatOffsets>
+    <smeltable>true</smeltable>
+    <apparel>
+      <countsAsClothingForNudity>true</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Other/Space_Collar</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>15</Steel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GryphonSpaceTech</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <displayPriority>238</displayPriority>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>  

@@ -171,6 +171,7 @@
 
                 <apparelList>
                     <li MayRequire="Ludeon.RimWorld.Odyssey">gryph_SpaceCollar</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">gryph_SpaceTailRing</li>
                 </apparelList>
 
                 <whiteApparelList>
@@ -330,7 +331,7 @@
             <FoodPoisonChance>0.8</FoodPoisonChance>
             <MentalBreakThreshold>0.35</MentalBreakThreshold>
             <CarryingCapacity>100</CarryingCapacity>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.1</VacuumResistance>
         </statBases>
 
         <tools Inherit="False">
@@ -399,7 +400,7 @@
                     <kindDefs>
                         <li>CreamGryph_Slave</li>
                     </kindDefs>
-                    <chance>40.0</chance>
+                    <chance>20.0</chance>
                 </li>
             </alienslavekinds>
         </pawnKindSettings>
