@@ -390,19 +390,4 @@
             </li>
         </tools>
     </AlienRace.ThingDef_AlienRace>
-
-    <AlienRace.RaceSettings>
-        <defName>CreamGryph_RaceSettings</defName>
-
-        <pawnKindSettings>
-            <alienslavekinds>
-                <li>
-                    <kindDefs>
-                        <li>CreamGryph_Slave</li>
-                    </kindDefs>
-                    <chance>20.0</chance>
-                </li>
-            </alienslavekinds>
-        </pawnKindSettings>
-    </AlienRace.RaceSettings>
 </Defs>

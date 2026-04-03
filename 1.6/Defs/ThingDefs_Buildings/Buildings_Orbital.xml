@@ -53,6 +53,10 @@
       <Gryphon_Feather>10</Gryphon_Feather>
     </costList>
     <comps>
+      <li Class="CompProperties_OxygenPusher"> <!--Count to oxygen sourse?-->
+        <requiresPower>true</requiresPower>
+        <airPerSecondPerHundredCells>0.0</airPerSecondPerHundredCells>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>300</basePowerConsumption>
