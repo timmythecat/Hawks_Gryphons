@@ -51,7 +51,7 @@
             <generalSettings>
                 <maleGenderProbability>0.5</maleGenderProbability>
                 <immuneToAge>false</immuneToAge>
-                <minAgeForAdulthood>10</minAgeForAdulthood>
+                <minAgeForAdulthood>12</minAgeForAdulthood>
                 <allowHumanBios>true</allowHumanBios>
 
                 <canLayDown>true</canLayDown>
@@ -73,12 +73,6 @@
                     <li>7</li>
                     <li>12</li>
                 </growthAges>
-                
-                <disallowedTraits>
-                    <li>
-                        <defName>Psychopath</defName>
-                    </li>
-                </disallowedTraits>
 
                 <raceGenes MayRequire="Ludeon.RimWorld.Biotech">
                     <li MayRequire="Ludeon.RimWorld.Biotech">
@@ -331,7 +325,7 @@
             <LeatherAmount>20</LeatherAmount>
 			<RoyalFavorValue>2</RoyalFavorValue>
             <Flammability>0.4</Flammability>
-            <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+            <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
             <FoodPoisonChance>0.8</FoodPoisonChance>
             <MentalBreakThreshold>0.35</MentalBreakThreshold>
             <CarryingCapacity>100</CarryingCapacity>

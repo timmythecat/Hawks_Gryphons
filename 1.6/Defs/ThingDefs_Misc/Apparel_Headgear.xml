@@ -24,7 +24,7 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
-      <VacuumResistance>0.45</VacuumResistance>
+      <VacuumResistance>0.5</VacuumResistance>
     </equippedStatOffsets>
     <smeltable>true</smeltable>
     <apparel>
