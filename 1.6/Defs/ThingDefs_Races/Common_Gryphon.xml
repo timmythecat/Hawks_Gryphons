@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Hawk_BaseGryphon">
         <defName>Hawk_common_gryphon</defName>
         <label>Gryphon</label>
         <description>A common gryphon that can vary a little in looks (acts as a pawn)</description>
