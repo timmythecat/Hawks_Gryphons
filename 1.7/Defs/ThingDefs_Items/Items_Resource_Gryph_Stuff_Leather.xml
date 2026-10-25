@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="BasicFeather" ParentName="LeatherBase">
+        <defName>Gryphon_Feather</defName>
+        <label>Gryphon Feather</label>
+        <description>Most of the time you'll find these feathers being preened off of gryphons</description>
+        <graphicData>
+            <texPath>Other/Basic_Feather</texPath>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>4</MarketValue>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+        </statBases>
+         <stuffProps>
+            <categories>
+                <li>Leathery</li>
+                <li>Gryph_Feather</li>
+            </categories>
+            <color>(255,206,124)</color> <!--Golden brown-->
+            <commonality>0.07</commonality>
+            <statFactors>
+                <MaxHitPoints>3</MaxHitPoints>
+                <Beauty>5</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+</Defs>

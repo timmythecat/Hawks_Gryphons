@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>Hawk_TalonSentryGun</defName>
+        <label>talon sentry gun</label>
+        <description>A sentry gun that can be mounted to a gryphons's talon</description>
+        <graphicData>
+            <texPath>Things/Talon_Sentry</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>20</Mass>
+            <AccuracyTouch>0.7</AccuracyTouch>
+            <AccuracyShort>0.8</AccuracyShort>
+            <AccuracyMedium>0.7</AccuracyMedium>
+            <AccuracyLong>0.5</AccuracyLong>
+            <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>SimpleGun</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_TalonSentry</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>37.5</range>
+                <soundCast>Shot_Autopistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>limb</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.8</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>IndustrialGryphonWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_TalonSentry</defName>
+        <label>sentry gun bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <drawSize>1.5</drawSize>
+        <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

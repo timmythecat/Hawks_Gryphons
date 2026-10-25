@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>CharredRaven_OxygenPump</defName>
+    <label>charred raven oxygen pump</label>
+    <description>An oxygen pump that uses feathers to produse a little heat as the oxygen flows through it.</description>
+    <thingClass>HarperAndFriends.Things.Building_HarperOxygenPump</thingClass>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <uiIconPath>Things/Building/LifesupportUnit/LifesupportUnit_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/LifesupportUnit/LifesupportUnit</texPath> <!--Needs to be changed-->
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>8</Mass>
+    </statBases>
+    <designationCategory>Odyssey</designationCategory>
+    <passability>Standable</passability>
+    <terrainAffordanceNeeded IsNull="True" />
+    <pathCost>0</pathCost>
+    <overrideMinifiedRot>North</overrideMinifiedRot>
+    <minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+    <building>
+      <isEdifice>false</isEdifice>
+      <claimable>true</claimable>
+      <isAttachment>true</isAttachment>
+      <deconstructible>true</deconstructible>
+      <expandHomeArea>true</expandHomeArea>
+    </building>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li>
+    </placeWorkers>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Gryphon_Feather>10</Gryphon_Feather>
+    </costList>
+    <comps>
+      <li Class="CompProperties_OxygenPusher"> <!--Count to oxygen sourse?-->
+        <requiresPower>true</requiresPower>
+        <airPerSecondPerHundredCells>0.0</airPerSecondPerHundredCells>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AmbientSound">
+        <sound>OxygenPump_Ambient</sound>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>GryphonSpaceTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

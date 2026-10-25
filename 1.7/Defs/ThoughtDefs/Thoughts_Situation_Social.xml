@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>Hawk_Gryphon</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>HarperAndFriends.ThoughtWorker_Gryph</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Fellow Gryphon</label>
+                <baseOpinionOffset>15</baseOpinionOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="HarperAndFriends.Hawk_AllowedBody">
+                <allowedBody>
+					<li>QuadrupedAnimalWithWingsAndBeak</li>
+				</allowedBody>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+</Defs>

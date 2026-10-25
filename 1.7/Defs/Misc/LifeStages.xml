@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <LifeStageDef ParentName="HumanlikeAdolescent">
+        <defName>Gryphlet</defName>
+        <label>gryphlet</label>
+        <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeChild</workerClass>
+        <bodySizeFactor>0.35</bodySizeFactor>
+        <voxPitch>1.2</voxPitch>
+        <headSizeFactor>0.75</headSizeFactor>
+        <healthScaleFactor>0.4</healthScaleFactor>
+        <foodMaxFactor>2.286</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.8 -->
+        <hungerRateFactor>0.8</hungerRateFactor>
+        <marketValueFactor>0.8</marketValueFactor>
+        <meleeDamageFactor>0.5</meleeDamageFactor>
+        <developmentalStage>Child</developmentalStage>
+        <equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor>
+        <sittingOffset>0.3</sittingOffset>
+        <silhouetteGraphicData>
+            <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanChild</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </silhouetteGraphicData>
+        <statFactors>
+            <MoveSpeed>0.75</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+    <LifeStageDef ParentName="HumanlikeAdolescent">
+        <defName>Egg</defName>
+        <label>Egg</label>
+        <bodySizeFactor>0.2</bodySizeFactor>
+        <voxPitch>1.6</voxPitch>
+        <headSizeFactor>0.5</headSizeFactor>
+        <foodMaxFactor>0.75</foodMaxFactor>
+        <hungerRateFactor>0.001</hungerRateFactor>
+        <healthScaleFactor>0.1</healthScaleFactor>
+        <marketValueFactor>0.4</marketValueFactor>
+        <meleeDamageFactor>0.01</meleeDamageFactor>
+        <developmentalStage>Baby</developmentalStage>
+        <fallAsleepMaxThresholdOverride>0.60</fallAsleepMaxThresholdOverride>
+        <naturalWakeThresholdOverride>1.0</naturalWakeThresholdOverride>
+        <alwaysDowned>true</alwaysDowned>
+        <claimable>true</claimable>
+        <involuntarySleepIsNegativeEvent>false</involuntarySleepIsNegativeEvent> <!-- Babies just fall asleep randomly and they're cool with it. -->
+        <thinkTreeMainOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBaby</thinkTreeMainOverride>
+        <thinkTreeConstantOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBabyConstant</thinkTreeConstantOverride>
+        <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks> <!-- Babies have crying/giggling fits instead of mental breaks. -->
+        <canSleepWhileHeld>true</canSleepWhileHeld>
+        <canVoluntarilySleep>false</canVoluntarilySleep> <!-- Babies fall asleep randomly when they're tired. -->
+        <canSleepWhenStarving>false</canSleepWhenStarving>
+        <canInitiateSocialInteraction>false</canInitiateSocialInteraction>
+        <customMoodTipString>Mood represents how happy or stressed someone is. Babies with low mood are more likely to cry, while babies with a high mood are more likely to giggle.</customMoodTipString>
+        <silhouetteGraphicData>
+            <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanBaby</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </silhouetteGraphicData>
+        <statFactors>
+            <MoveSpeed>0.2</MoveSpeed>
+        </statFactors>
+        <statOffsets>
+
+        </statOffsets>
+        <involuntarySleepMTBDaysFromRest>
+            <points>
+                <li>(.00, 0)</li>
+                <li>(.01, .01)</li>
+                <li>(.15, .166)</li>
+                <li>(.30, 1)</li>
+                <li>(.59, 10)</li>
+                <li>(.60, Infinity)</li>
+            </points>
+        </involuntarySleepMTBDaysFromRest>
+    </LifeStageDef>
+</Defs>

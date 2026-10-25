@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>Hawk_Nest</defName>
+    <label>Nest</label>
+    <description>A simple nest that fits two people.</description>
+    <graphicData>
+      <texPath>Buildings/LargeNest/Large_nest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.7,3.7)</drawSize>
+      <damageData>
+        <rect>(0,0.05,3,2.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <rotatable>true</rotatable>
+    <costList>
+		  <Hay>50</Hay>
+	  </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>75</Mass>
+      <Beauty>6</Beauty>
+      <Comfort>0.7</Comfort>
+      <BedRestEffectiveness>0.9</BedRestEffectiveness>
+      <Flammability>0.8</Flammability>
+      <ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <techLevel>Medieval</techLevel>
+    <designationHotKey>Misc3</designationHotKey>
+    <building>
+       <bed_healPerDay>3</bed_healPerDay>
+       <bed_showSleeperBody>True</bed_showSleeperBody>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>Hawk_Gryph_Pillow</defName>
+    <label>Gryph Pillow</label>
+    <description>A fancy pillow that fits two gryphons.</description>
+    <graphicData>
+      <texPath>Buildings/RoyalAnimalBed/RoyalAnimalBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.8,2.8)</drawSize>
+      <damageData>
+        <rect>(0,0.05,3,2.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <rotatable>true</rotatable>
+    <costList>
+		  <Gryphon_Feather>120</Gryphon_Feather>
+	  </costList>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>85</Mass>
+      <Beauty>10</Beauty>
+      <Comfort>1</Comfort>
+      <BedRestEffectiveness>1.1</BedRestEffectiveness>
+      <Flammability>0.7</Flammability>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+    </statBases>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <researchPrerequisites>
+      <li>GryphonFurniture</li>
+    </researchPrerequisites>
+    <costStuffCount>80</costStuffCount>
+    <size>(2,2)</size>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <designationHotKey>Misc3</designationHotKey>
+    <building>
+       <bed_healPerDay>6</bed_healPerDay>
+       <bed_showSleeperBody>True</bed_showSleeperBody>
+    </building>
+  </ThingDef>
+</Defs>

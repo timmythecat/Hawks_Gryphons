@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>GryphonFurniture</defName>
+        <label>gryphon furniture</label>
+        <description>Build advanced gryphon furniture such as a Gryphon Pillow</description>
+        <tab>Hawk_Gryphon</tab>
+        <baseCost>300</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <generalRules>
+        <rulesStrings>
+            <li>subject->carpentry</li>
+
+            <li>subject_story->has started experiment with better furniture for gryphons</li>
+            <li>subject_story->has mastered craft in furniture and has dedicated works to gryphons</li>
+
+            <li>subject_gerund->building gryphon furniture</li>
+        </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>PrimitiveGryphonWeapons</defName>
+        <label>primitive gryphon weapons</label>
+        <description>Craft basic ranged weapons that gryphons can equip</description>
+        <tab>Hawk_Gryphon</tab>
+        <baseCost>300</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+        <generalRules>
+        <rulesStrings>
+            <li>subject->bowyery</li>
+            <li>subject->bow-making</li>
+            <li>subject->cannonry</li>
+
+            <li>subject_story->has started drafting new ranged weapon concepts for gryphons</li>
+            <li>subject_story->has mastered craft in bows and has dedicated works to gryphons</li>
+            <li>subject_story->was volunteered to test the various ranged weaponry</li>
+
+            <li>subject_gerund->constructing gryphon weapons</li>
+        </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>IndustrialGryphonWeapons</defName>
+        <label>industrial gryphon weapons</label>
+        <description>Craft basic ranged weapons that gryphons can equip</description>
+        <tab>Hawk_Gryphon</tab>
+        <baseCost>600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>PrimitiveGryphonWeapons</li>
+            <li>Smithing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+        <generalRules>
+        <rulesStrings>
+            <li>subject->gun-making</li>
+            <li>subject->cannonry</li>
+
+            <li>subject_story->has started drafting new ranged weapon concepts for gryphons</li>
+            <li>subject_story->has mastered craft in guns and has dedicated works to gryphons</li>
+            <li>subject_story->was volunteered to test the various ranged weaponry</li>
+
+            <li>subject_gerund->constructing gryphon guns</li>
+        </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>GryphonBionics</defName>
+        <label>gryphon bionic parts</label>
+        <description>Build high-tech gryphon bionic body parts to replace limbs and eyes. Requires a skilled doctor to attach.</description>
+        <tab>Hawk_Gryphon</tab>
+        <baseCost>1500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>AdvancedFabrication</li>
+            <li>Bionics</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>3.0</researchViewY>
+        <generalRules>
+        <rulesStrings>
+            <li>subject->bionic prosthesis</li>
+
+            <li>subject_story->worked primarily with disfigured gryphons, crafting bespoke bionic facial elements so they could return to their mates</li>
+            <li>subject_story->was volunteered to have the various prototype bionics implanted, ending up as more machine than man</li>
+            <li>subject_story->has spent countless hours studying the movements of gryphons to design extentions and replacements for them</li>
+
+            <li>subject_gerund->constructing gryphon bionics</li>
+            <li>subject_gerund->utilizing gryphon bionic body parts</li>
+        </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Odyssey">
+        <defName>GryphonSpaceTech</defName>
+        <label>gryphon Space Tech</label>
+        <description>Some tools and apperal to help gryphons in space</description>
+        <tab>Hawk_Gryphon</tab>
+        <baseCost>1200</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>OrbitalTech</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>4.0</researchViewY>
+        <generalRules>
+        <rulesStrings>
+            <li>subject->bionic prosthesis</li>
+
+            <li>subject_story->Came from space knowing the challeges, They manage to craft supplies that would help gryphons in space</li>
+            <li>subject_story->was volunteered to test the various space tech's ablities</li>
+            <li>subject_story->has spent countless hours studying the movements of gryphons to design equipment that would suit them</li>
+
+            <li>subject_gerund->constructing gryphon space tech</li>
+            <li>subject_gerund->utilizing gryphon space tech</li>
+        </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+</Defs>

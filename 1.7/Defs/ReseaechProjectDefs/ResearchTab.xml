@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchTabDef>
+    <defName>Hawk_Gryphon</defName>
+    <label>Gryphon</label>
+    <generalTitle>Gryphon research projects</generalTitle>
+    <generalDescription>Unlock new gryphon related technology.</generalDescription>
+  </ResearchTabDef>
+
+</Defs>

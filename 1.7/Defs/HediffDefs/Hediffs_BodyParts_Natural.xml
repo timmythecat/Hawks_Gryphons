@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <RecipeDef Name="GryphInstallBodyPartNaturalBase" ParentName="SurgeryInstallBodyPartNaturalBase" Abstract="True">
+        <recipeUsers Inherit="false">
+            <li MayRequire="hawkimport.harper">charred_raven_gryphon</li>
+            <li MayRequire="hawkimport.harper">saberbeak_gryphon</li>
+            <li>cream_gryphon</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!--Heart-->
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Hawkimport_Heart</defName>
+        <label>gryphon heart</label>
+        <description>A biological gryphon heart. Pumps blood around the body.</description>
+        <descriptionHyperlinks><RecipeDef>Hawkimport_InstallGryphHeart</RecipeDef></descriptionHyperlinks>
+        <statBases>
+        <MarketValue>1500</MarketValue>
+        <Mass>3</Mass>
+        </statBases>
+    </ThingDef>
+  
+    <RecipeDef ParentName="GryphInstallBodyPartNaturalBase">
+        <defName>Hawkimport_InstallGryphHeart</defName>
+        <label>install gryphon heart</label>
+        <description>Install a gryphon heart.</description>
+        <jobString>Installing gryphon heart.</jobString>
+        <workAmount>1600</workAmount>
+        <skillRequirements>
+        <Medicine>10</Medicine>
+        </skillRequirements>
+        <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Hawkimport_Heart</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Hawkimport_Heart</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Hawkimport_Heart</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+
+    <!--Lung-->
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Hawkimport_Lung</defName>
+        <label>gryphon lung</label>
+        <description>A biological gryphon lung. A pair of these form the core of the gryphon respiratory system.</description>
+        <descriptionHyperlinks><RecipeDef>Hawkimport_InstallNaturalLung</RecipeDef></descriptionHyperlinks>
+        <statBases>
+        <MarketValue>1300</MarketValue>
+        <Mass>3</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="GryphInstallBodyPartNaturalBase">
+        <defName>Hawkimport_InstallNaturalLung</defName>
+        <label>install gryphon lung</label>
+        <description>Install a gryphon lung.</description>
+        <jobString>Installing gryphon lung.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Hawkimport_Lung</li>
+                </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Hawkimport_Lung</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Hawkimport_Lung</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+
+    <!--Kidney-->
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Hawkimport_Kidney</defName>
+        <label>gryphon kidney</label>
+        <description>A biological gryphon kidney. Filters and removes waste products from the blood.</description>
+        <descriptionHyperlinks><RecipeDef>Hawkimport_InstallNaturalKidney</RecipeDef></descriptionHyperlinks>
+        <statBases>
+        <MarketValue>1100</MarketValue>
+        <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="GryphInstallBodyPartNaturalBase">
+        <defName>Hawkimport_InstallNaturalKidney</defName>
+        <label>install gryphon kidney</label>
+        <description>Install a gryphon kidney.</description>
+        <jobString>Installing gryphon kidney.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hawkimport_Kidney</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Hawkimport_Kidney</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Hawkimport_Kidney</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+</Defs>

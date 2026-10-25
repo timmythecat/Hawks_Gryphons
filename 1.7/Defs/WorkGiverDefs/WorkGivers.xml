@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef Name="Hawk_CollectPreened">
+		<defName>CollectPreened</defName>
+		<label>Taking preened feathers</label>
+		<giverClass>HarperAndFriends.WorkGiver_CollectPreened</giverClass>
+		<workType>Handling</workType>
+		<verb>take preened feathers</verb>
+		<gerund>taking preened feathers</gerund>
+		<priorityInType>90</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<modExtensions>
+            <li Class="HarperAndFriends.Hawk_AllowedBody">
+                <allowedBody>
+					<li>QuadrupedAnimalWithWingsAndBeak</li>
+				</allowedBody>
+            </li>
+        </modExtensions>
+	</WorkGiverDef>
+</Defs>

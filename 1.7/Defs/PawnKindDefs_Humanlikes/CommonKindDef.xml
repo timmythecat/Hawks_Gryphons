@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>Hawk_Gryphon_Colonist</defName>
+        <label>colonist</label>
+        <race>Hawk_common_gryphon</race>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+
+        <!-- This is a required field. 13~21 is the default value for Crashlanded player colonists. -->
+        <initialResistanceRange>13~21</initialResistanceRange>
+    </PawnKindDef>
+ 
+    <PawnKindDef ParentName="SpaceRefugeeBase">
+        <defName>Hawk_Gryphon_SpaceRefugee</defName>
+        <label>space refugee</label>
+        <race>Hawk_common_gryphon</race>
+        <combatPower>90</combatPower>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <apparelMoney>0~1000</apparelMoney>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <initialWillRange>3~7</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+    </PawnKindDef>
+ 
+    <PawnKindDef ParentName="SlaveBase">
+        <defName>Hawk_Gryphon_Slave</defName>
+        <label>gryphon slave</label>
+        <combatPower>50</combatPower>
+        <race>Hawk_common_gryphon</race>
+        <invNutrition>2</invNutrition>
+        <invFoodDef>Pemmican</invFoodDef>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="VillagerBase">
+        <defName>Hawk_Gryphon_Villager</defName>
+        <label>gryphon villager</label>
+        <combatPower>80</combatPower>
+        <race>Hawk_common_gryphon</race>
+        <weaponTags>
+            <li>GryphonNeolithic</li>
+        </weaponTags>
+        <techHediffsTags>
+            <li>GryphAdvanced</li>
+        </techHediffsTags>
+        <techHediffsChance>0.2</techHediffsChance>
+        <initialWillRange>4~9</initialWillRange>
+        <initialResistanceRange>8~15</initialResistanceRange>
+    </PawnKindDef> 
+</Defs>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>Torso</defName>
+    <label>torso</label>
+    <listOrder>100</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>Hawk_FullHead</defName>
+    <label>full head</label>
+    <listOrder>199</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>Eyes</defName>
+    <label>eyes</label>
+    <listOrder>198</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>Neck</defName>
+    <label>neck</label>
+    <listOrder>180</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontLeftPaw</defName>
+    <label>front left paw</label>
+    <labelShort>paw</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontRightPaw</defName>
+    <label>front right paw</label>
+    <labelShort>paw</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontLeftLeg</defName>
+    <label>front left leg</label>
+    <labelShort>leg</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontRightLeg</defName>
+    <label>front right leg</label>
+    <labelShort>leg</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontLeftClaws</defName>
+    <label>front left claws</label>
+    <labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontRightClaws</defName>
+    <label>front right claws</label>
+    <labelShort>claws</labelShort>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>Beak</defName>
+    <label>beak</label>
+  </BodyPartGroupDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Wing</defName>
+    <label>wing</label>
+    <hitPoints>30</hitPoints>
+    <beautyRelated>true</beautyRelated>
+    <permanentInjuryChanceFactor>0.3</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+    <canSuggestAmputation>true</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Talon</defName>
+    <label>Talon</label>
+    <hitPoints>35</hitPoints>
+    <permanentInjuryChanceFactor>1.5</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <canBeVacuumBurnt>false</canBeVacuumBurnt>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Leg</defName>
+    <label>leg</label>
+    <hitPoints>25</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Heart</defName>
+    <label>heart</label>
+    <hitPoints>16</hitPoints>
+    <bleedRate>5</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Hawkimport_Heart</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Spine</defName>
+    <label>spine</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>Spine</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Lung</defName>
+    <label>lung</label>
+    <hitPoints>16</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BreathingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Hawkimport_Lung</spawnThingOnRemoved>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Kidney</defName>
+    <label>kidney</label>
+    <hitPoints>14</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodFiltrationKidney</li>
+    </tags>
+    <spawnThingOnRemoved>Hawkimport_Kidney</spawnThingOnRemoved>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Hawkimport_Crop</defName>
+    <label>crop</label>
+    <hitPoints>18</hitPoints>
+    <permanentInjuryChanceFactor>0.1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+      <li>MetabolismSource</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

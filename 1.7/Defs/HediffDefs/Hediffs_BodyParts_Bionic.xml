@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <!--Bases-->
+  <ThingDef Name="GryphBionicBase" ParentName="BodyPartBionicBase" Abstract="True">
+    <techHediffsTags>
+      <li>GryphAdvanced</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <recipeMaker>
+      <researchPrerequisite>GryphonBionics</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef Name="GryphInstallBodyPartBionicBase" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+    <recipeUsers Inherit="false">
+      <li MayRequire="hawkimport.harper">charred_raven_gryphon</li>
+      <li MayRequire="hawkimport.harper">saberbeak_gryphon</li>
+      <li>cream_gryphon</li>
+      <li>Hawk_common_gryphon</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <!--Heart-->
+  <HediffDef ParentName="AddedBodyPartBase">
+      <defName>BionicGryphHeart</defName>
+      <label>bionic gryphon heart</label>
+      <labelNoun>a bionic gryphon heart</labelNoun>
+      <description>This gryph seems to be slightly less gryph. An installed Heart</description>
+      <descriptionHyperlinks><ThingDef>BionicGryphHeart</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>BionicGryphHeart</spawnThingOnRemoved>
+      <comps>
+        <li Class="HarperAndFriends.HediffCompProperties_PartHealPermWounds" />
+      </comps>
+      <stages>
+        <li>
+          <naturalHealingFactor>1.2</naturalHealingFactor>
+          <totalBleedFactor>0.7</totalBleedFactor>
+        </li>
+      </stages>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>1.8</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphHeart</defName>
+    <label>bionic gryphon heart</label>
+    <description>An advanced artificial gryphon heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It also provides better healing capacities.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphHeart</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>5</Mass>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphHeart</defName>
+    <label>install bionic gryphon heart</label>
+    <description>Install a bionic gryphon heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphHeart</ThingDef>
+      <HediffDef>BionicGryphHeart</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>12</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphHeart</addsHediff>
+  </RecipeDef>
+
+  <!--Lung-->
+  <HediffDef ParentName="AddedBodyPartBase">
+      <defName>BionicGryphLung</defName>
+      <label>bionic gryphon lung</label>
+      <labelNoun>a bionic gryphon lung</labelNoun>
+      <description>This gryph seems to be slightly less gryph. An installed Lung</description>
+      <descriptionHyperlinks><ThingDef>BionicGryphLung</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>BionicGryphLung</spawnThingOnRemoved>
+      <addedPartProps>
+          <solid>true</solid>
+          <partEfficiency>1.4</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+      <stages>
+        <li>
+          <statOffsets>
+            <ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphLung</defName>
+    <label>bionic gryphon lung</label>
+    <description>An advanced artificial gryphon lung. Optimized to regulate breaths in such a way to last longer.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphLung</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphLung</defName>
+    <label>install bionic gryphon lung</label>
+    <description>Install a bionic gryphon lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphLung</ThingDef>
+      <HediffDef>BionicGryphLung</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>8</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphLung</addsHediff>
+  </RecipeDef>
+
+  <!--Kidney-->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicGryphKidney</defName>
+    <label>bionic gryphon kidney</label>
+    <labelNoun>a bionic gryphon kidney</labelNoun>
+    <description>This gryph seems to be slightly less gryph. An installed kidney</description>
+    <descriptionHyperlinks><ThingDef>BionicGryphKidney</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicGryphKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicEnvironmentResistance>0.05</ToxicEnvironmentResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphKidney</defName>
+    <label>bionic gryphon kidney</label>
+    <description>An advanced artificial gryphon kidney. It's capability to filter waste and extra water from the host's blood is so efficient that there's hardly any waste at all.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphKidney</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphKidney</defName>
+    <label>install bionic gryphon kidney</label>
+    <description>Install a bionic gryphon kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphKidney</ThingDef>
+      <HediffDef>BionicGryphKidney</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>8</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphKidney</addsHediff>
+  </RecipeDef>
+
+  <!--Eye-->
+  <HediffDef ParentName="AddedBodyPartBase">
+      <defName>BionicGryphEye</defName>
+      <label>bionic gryphon eye</label>
+      <labelNoun>a bionic gryphon eye</labelNoun>
+      <description>This gryph seems to be slightly less gryph. An installed eye</description>
+      <descriptionHyperlinks><ThingDef>BionicGryphEye</ThingDef></descriptionHyperlinks>
+      <spawnThingOnRemoved>BionicGryphEye</spawnThingOnRemoved>
+      <stages>
+        <li>
+          <statOffsets>
+            <MeleeDodgeChance>5</MeleeDodgeChance>
+            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
+          </statOffsets>
+        </li>
+      </stages>
+      <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.4</partEfficiency>
+        <betterThanNatural>true</betterThanNatural>
+      </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphEye</defName>
+    <label>bionic gryphon eye</label>
+    <description>An advanced artificial gryphon eye. Allow for gryphons to have better vison</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphEye</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1</Mass>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphEye</defName>
+    <label>install bionic gryphon eye</label>
+    <description>Install a bionic gryphon eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphEye</ThingDef>
+      <HediffDef>BionicGryphEye</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>8</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphEye</addsHediff>
+  </RecipeDef>
+
+<!--Spine-->
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicGryphSpine</defName>
+    <label>bionic gryphon spine</label>
+    <labelNoun>a bionic gryphon spine</labelNoun>
+    <description>This gryph seems to be slightly less gryph. An installed spine. this spine contains a little power</description>
+    <descriptionHyperlinks><ThingDef>BionicGryphSpine</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
+          <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">1</MechRemoteShieldEnergy>
+          <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">1</MechBandwidth>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphSpine</defName>
+    <label>bionic gryphon spine</label>
+    <description>An advanced artificial gryphon spine. A biogel nerve bundle runs down an articulated plasteel core, surrounded by a lattice-dust healing system. It seem to pontain just a little power.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphSpine</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>18</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphSpine</defName>
+    <label>install bionic gryphon spine</label>
+    <description>Install a bionic gryphon spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphSpine</ThingDef>
+      <HediffDef>BionicGryphSpine</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>8</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphSpine</addsHediff>
+  </RecipeDef>
+
+<!--Wing-->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicGryphWing</defName>
+    <label>bionic gryphon wing</label>
+    <labelNoun>a bionic gryphon wing</labelNoun>
+    <description>This wing is designed to allow feathers to be inserted into slots making it appear as if its a normal wing.</description>
+    <descriptionHyperlinks><ThingDef>BionicGryphWing</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicGryphWing</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>3</MeleeDodgeChance>
+          <CrawlSpeed>0.20</CrawlSpeed>
+          <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.4</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphWing</defName>
+    <label>bionic gryphon wing</label>
+    <description>An advanced artificial gryphon wing. This wing is designed to allow feathers to be inserted into slots making it appear as if its a normal wing.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphWing</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1300</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2</Mass>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphWing</defName>
+    <label>install bionic gryphon wing</label>
+    <description>Install a bionic gryphon wing.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphWing</ThingDef>
+      <HediffDef>BionicGryphWing</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>8</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon Wing.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphWing</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphWing</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Wing</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphWing</addsHediff>
+  </RecipeDef>
+
+<!--Talons-->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicGryphTalon</defName>
+    <label>bionic gryphon talon</label>
+    <labelNoun>a bionic gryphon talon</labelNoun>
+    <description>This talon is designed with a plasteel core, mechnisms on the inside allow the gryohon use it as normal. The outide is then textured and colored to resemble a bird like talon.</description>
+    <descriptionHyperlinks><ThingDef>BionicGryphTalon</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicGryphTalon</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <HackingSpeed>0.1</HackingSpeed>
+          <CrawlSpeed>0.5</CrawlSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.4</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphTalon</defName>
+    <label>bionic gryphon talon</label>
+    <description>An advanced artificial gryphon talon. This talon is designed with a plasteel core, mechnisms on the inside allow the gryohon use it as normal. The outide is then textured and colored to resemble a bird like talon.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphWing</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>3</Mass>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphTalon</defName>
+    <label>install bionic gryphon talon</label>
+    <description>Install a bionic gryphon talon.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphTalon</ThingDef>
+      <HediffDef>BionicGryphTalon</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>7</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon talon.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphTalon</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphTalon</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Talon</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphTalon</addsHediff>
+  </RecipeDef>
+
+<!--Legs-->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicGryphLeg</defName>
+    <label>bionic gryphon leg</label>
+    <labelNoun>a bionic gryphon leg</labelNoun>
+    <description>This leg is designed with a plasteel core, mechnisms on the inside allow the gryohon use it as normal.</description>
+    <descriptionHyperlinks><ThingDef>BionicGryphLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicGryphLeg</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <CrawlSpeed>0.3</CrawlSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+        <solid>true</solid>
+        <partEfficiency>1.2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="GryphBionicBase">
+    <defName>BionicGryphLeg</defName>
+    <label>bionic gryphon leg</label>
+    <description>An advanced artificial gryphon leg. This leg is designed with a plasteel core, mechnisms on the inside allow the gryohon use it as normal.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicGryphWing</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>4</Mass>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+    </statBases>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="GryphInstallBodyPartBionicBase">
+    <defName>InstallBionicGryphLeg</defName>
+    <label>install bionic gryphon leg</label>
+    <description>Install a bionic gryphon leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicGryphLeg</ThingDef>
+      <HediffDef>BionicGryphLeg</HediffDef>
+    </descriptionHyperlinks>
+    <skillRequirements>
+        <Medicine>7</Medicine>
+    </skillRequirements>
+    <jobString>Installing bionic gryphon leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicGryphLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicGryphLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hawkimport_Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicGryphLeg</addsHediff>
+  </RecipeDef>
+</Defs>

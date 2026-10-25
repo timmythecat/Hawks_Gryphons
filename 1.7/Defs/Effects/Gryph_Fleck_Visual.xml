@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>FireSpew_Gryph</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.2</fadeInTime>
+        <solidTime>0.5</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+        <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection>
+        <rotateTowardsMoveDirectionExtraAngle>-90</rotateTowardsMoveDirectionExtraAngle>
+        <graphicData>
+        <graphicClass>Graphic_FleckPulse</graphicClass>
+        <shaderType>GlowAnimated</shaderType>
+        <texPath>Other/Effects/FireSpew_Gryph</texPath>
+        <shaderParameters>
+            <_NumFrames>5</_NumFrames>
+            <_FramesPerSec>7</_FramesPerSec>
+        </shaderParameters>
+        <drawSize>1.2</drawSize>
+        </graphicData>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>Hawk_FireSpew_Glow</defName>
+        <altitudeLayer>LightingOverlay</altitudeLayer>
+        <fadeInTime>0.1</fadeInTime>
+        <solidTime>0.105</solidTime>
+        <fadeOutTime>0.3</fadeOutTime>
+        <graphicData>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Other/Effects/FireGlow</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>6</drawSize>
+        <color>(1, 1, 1, 0.75)</color>
+        </graphicData>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>Hawk_FireSpew_Base</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.2</fadeInTime>
+        <solidTime>0.2</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+        <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection>
+        <graphicData>
+        <graphicClass>Graphic_FleckPulse</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <texPath>Other/Effects/FireSpew_Base</texPath>
+        <drawSize>(1.25, 2.5)</drawSize>
+        </graphicData>
+    </FleckDef>
+
+    <EffecterDef>
+        <defName>Hawk_Fire_Spew</defName>
+        <children>
+        <li>
+            <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+            <positionRadius>0.15</positionRadius>
+            <fleckDef>FireSpew_Gryph</fleckDef> <!--Need to change-->
+            <chancePerTick>0.9</chancePerTick>
+            <speed>9.5</speed>
+            <scale>0.9~1.4</scale>
+            <angle>-20~20</angle>
+            <positionLerpFactor>0.85</positionLerpFactor>
+            <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        </li>
+        <li>
+            <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+            <positionRadius>0.1</positionRadius>
+            <fleckDef>Hawk_FireSpew_Base</fleckDef>
+            <chancePerTick>0.1</chancePerTick>
+            <speed>0.6</speed>
+            <scale>0.9</scale>
+            <angle>-9~9</angle>
+            <positionLerpFactor>0.75</positionLerpFactor>
+            <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        </li>
+        <li>
+            <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+            <positionRadius>0.1</positionRadius>
+            <moteDef>Mote_SparkThrownFast</moteDef>
+            <chancePerTick>0.5</chancePerTick>
+            <speed>3.3~5</speed>
+            <scale>0.1~0.2</scale>
+            <angle>-12~12</angle>
+            <positionLerpFactor>0.8</positionLerpFactor>
+            <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        </li>
+        <li>
+            <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+            <positionRadius>0.2</positionRadius>
+            <fleckDef>Hawk_FireSpew_Glow</fleckDef>
+            <chancePerTick>0.16</chancePerTick>
+            <positionLerpFactor>0.65</positionLerpFactor>
+        </li>
+        </children>
+    </EffecterDef>
+</Defs>
