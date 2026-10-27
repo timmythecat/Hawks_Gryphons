@@ -3,7 +3,7 @@
     <WorkGiverDef Name="Hawk_CollectPreened">
 		<defName>CollectPreened</defName>
 		<label>Taking preened feathers</label>
-		<giverClass>HarperAndFriends.WorkGiver_CollectPreened</giverClass>
+		<giverClass>HawksGryphons.WorkGiver_CollectPreened</giverClass>
 		<workType>Handling</workType>
 		<verb>take preened feathers</verb>
 		<gerund>taking preened feathers</gerund>
@@ -12,7 +12,7 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 		<modExtensions>
-            <li Class="HarperAndFriends.Hawk_AllowedBody">
+            <li Class="HawksGryphons.Extensions.Hawk_AllowedBody">
                 <allowedBody>
 					<li>QuadrupedAnimalWithWingsAndBeak</li>
 				</allowedBody>

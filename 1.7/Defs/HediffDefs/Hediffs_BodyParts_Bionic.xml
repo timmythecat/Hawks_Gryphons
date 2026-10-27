@@ -16,7 +16,6 @@
     <recipeUsers Inherit="false">
       <li MayRequire="hawkimport.harper">charred_raven_gryphon</li>
       <li MayRequire="hawkimport.harper">saberbeak_gryphon</li>
-      <li>cream_gryphon</li>
       <li>Hawk_common_gryphon</li>
     </recipeUsers>
   </RecipeDef>
@@ -30,7 +29,7 @@
       <descriptionHyperlinks><ThingDef>BionicGryphHeart</ThingDef></descriptionHyperlinks>
       <spawnThingOnRemoved>BionicGryphHeart</spawnThingOnRemoved>
       <comps>
-        <li Class="HarperAndFriends.HediffCompProperties_PartHealPermWounds" />
+        <li Class="HawksGryphons.HediffCompProperties_PartHealPermWounds" />
       </comps>
       <stages>
         <li>

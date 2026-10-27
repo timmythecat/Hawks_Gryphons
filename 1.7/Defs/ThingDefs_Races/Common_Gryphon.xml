@@ -292,7 +292,7 @@
         </race>
 
         <comps>
-            <li Class="HarperAndFriends.CompProperties_Preenable">
+            <li Class="HawksGryphons.CompProperties_Preenable">
                 <featherDef>Gryphon_Feather</featherDef>
                 <featherIntervalDays>7</featherIntervalDays>
                 <featherAmount>10</featherAmount>

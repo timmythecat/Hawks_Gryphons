@@ -5,7 +5,7 @@
     <defName>CharredRaven_OxygenPump</defName>
     <label>charred raven oxygen pump</label>
     <description>An oxygen pump that uses feathers to produse a little heat as the oxygen flows through it.</description>
-    <thingClass>HarperAndFriends.Things.Building_HarperOxygenPump</thingClass>
+    <thingClass>HawksGryphons.Things.Building_HarperOxygenPump</thingClass>
     <tickerType>Rare</tickerType>
     <rotatable>true</rotatable>
     <minifiedDef>MinifiedThing</minifiedDef>

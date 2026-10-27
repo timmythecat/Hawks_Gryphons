@@ -2,7 +2,7 @@
 <Defs>
 	<JobDef>
 		<defName>CollectPreened</defName>
-		<driverClass>HarperAndFriends.JobDriver_CollectPreened</driverClass>
+		<driverClass>HawksGryphons.JobDriver_CollectPreened</driverClass>
 		<reportString>taking preened feathers off TargetA.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef> 
